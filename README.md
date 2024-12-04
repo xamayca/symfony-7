@@ -3,7 +3,7 @@
 ---
 
 ## 1. Création du projet Symfony
-> 📌 **Pour démarrer un projet Symfony, consultez la documentation officielle [ici](https://symfony.com/doc/current/the-fast-track/en/3-zero.html#initializing-the-project).**
+> 📌 **Pour démarrer un projet Symfony, consultez la documentation officielle [Symfony](https://symfony.com/doc/current/the-fast-track/en/3-zero.html#initializing-the-project).**
 
 Dans un terminal, exécutez la commande suivante pour créer un projet Symfony avec toutes les dépendances nécessaires pour une application web :
 
@@ -16,7 +16,7 @@ symfony new monprojet --webapp
 ---
 
 ## 2. Création du `HomeController`
-> 📌 **Pour en savoir plus sur les contrôleurs, consultez la documentation officielle [ici](https://symfony.com/doc/current/controller.html).**
+> 📌 **Pour en savoir plus sur les contrôleurs, consultez la documentation officielle [Symfony Controller](https://symfony.com/doc/current/controller.html).**
 
 Pour générer un contrôleur nommé `HomeController`, exécutez la commande suivante dans votre terminal :
 
@@ -29,7 +29,7 @@ Cette commande va créer un contrôleur ainsi qu'une vue par défaut dans les r�
 ---
 
 ## 3. Modification de la route du contrôleur
-> 📌 **Pour plus d'informations sur les routes, consultez la documentation [ici](https://symfony.com/doc/current/routing.html).**
+> 📌 **Pour plus d'informations sur les routes, consultez la documentation [Symfony Routing](https://symfony.com/doc/current/routing.html).**
 
 Une fois le contrôleur généré, ouvrez le fichier `src/Controller/HomeController.php` dans votre éditeur de texte ou IDE préféré.
 
