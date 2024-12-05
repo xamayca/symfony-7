@@ -12,7 +12,7 @@
 
 [4 Installation de tailwindCSS (SymfonyCast Bundle)](documentation/4%20Installation%20de%20tailwindCSS.md)
 
-[5 Configuration de l'autobuild (Assets)](documentation/5%20Configuration%20de%20l%27autobuild.md)
+[5 Configuration de l'autobuild (TailwindCSS)](documentation/5%20Configuration%20de%20l%27autobuild.md)
 
 [6 Création de l'entité User (Doctrine)](documentation/6%20Cr%C3%A9ation%20de%20l%27entit%C3%A9%20User.md)
 
