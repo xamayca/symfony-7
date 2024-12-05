@@ -4,7 +4,7 @@
 
 ## Sommaire :
 
-[1 Création du projet](documentation/1%20Cr%C3%A9ation%20du%20projet.md)
+[1 Démarrage du projet](documentation/1%20Cr%C3%A9ation%20du%20projet.md)
 
 [2 Création du HomeController](documentation/2%20Cr%C3%A9ation%20du%20homecontroller.md)
 
