@@ -88,7 +88,8 @@ class UserFixtures extends Fixture
 Cette fixture contient deux fonctions :
 
 #### 1. **createAdminUser** :
-    - Crée un utilisateur administrateur avec le nom admin, l'email test@admin.fr, et le mot de passe admin. Il reçoit le rôle ['ROLE_ADMIN'].
+    - Crée un utilisateur administrateur avec le nom admin, l'email test@admin.fr, et le mot de passe admin.
+    - Il reçoit le rôle ['ROLE_ADMIN'].
     - L'utilisateur est enregistré dans la base de données via l'ObjectManager.
 
 #### 2. **createRandomUser** :
