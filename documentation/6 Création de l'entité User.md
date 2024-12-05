@@ -77,7 +77,7 @@ Nous devons maintenant mettre à jour le schéma de la base de données avec la 
 symfony console d:s:u -f
 ```
 
-La commande `symfony console d:s:u -f` est utilisée pour mettre à jour le schéma de la base de données selon les entités et migrations.
+La commande `symfony console d:s:u -f` est utilisée pour mettre à jour le schéma de la base de données en fonction des entités.
 
 > 🗒️ **Remarque** :
 > - **`d`** : Référence à **Doctrine**, la bibliothèque de gestion de la base de données.
@@ -90,9 +90,9 @@ Pour créer une migration, vous devez d'abord exécuter la commande suivante :
 ```bash
 php bin/console make:migration
 ```
-Cette commande créeras un fichier de migration contenant toute les requetes a la racine de votre projet dans le dossier `migrations`.
+Cette commande créera un fichier de migration contenant toutes les requêtes nécessaires à la mise à jour de la base de données. Le fichier sera créé à la racine de votre projet dans le dossier `migrations`.
 
-Puis, pour éffectuer la migration la commande suivante :
+Ensuite, pour appliquer la migration et mettre à jour la base de données, exécutez la commande suivante :
 
 ```bash
 php bin/console doctrine:migrations:migrate
