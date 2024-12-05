@@ -90,7 +90,9 @@ Pour créer une migration, vous devez d'abord exécuter la commande suivante :
 ```bash
 php bin/console make:migration
 ```
-Cette commande créera un fichier de migration contenant toutes les requêtes nécessaires à la mise à jour de la base de données. Le fichier sera créé à la racine de votre projet dans le dossier `migrations`.
+Cette commande créera un fichier de migration contenant toutes les requêtes nécessaires à la mise à jour de la base de données.
+
+Le fichier sera créé à la racine de votre projet dans le dossier `migrations`.
 
 Ensuite, pour appliquer la migration et mettre à jour la base de données, exécutez la commande suivante :
 
