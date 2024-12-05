@@ -98,7 +98,7 @@ Puis, pour éffectuer la migration la commande suivante :
 php bin/console doctrine:migrations:migrate
 ```
 
-Notre entité posséde maintenant les champs `username`,`email`,`password`,`roles`,`createdAt`.
+Notre entité posséde maintenant les champs `username`,`email`,`password`,`roles`,`created_at` en base de données.
 
 
 ---
