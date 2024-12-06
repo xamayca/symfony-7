@@ -32,8 +32,8 @@ class RegistrationFormType extends AbstractType
                     'placeholder' => 'Email'
                 ]
             ])
-            ->add('password', repeatedType::class, [
-                'mapped' => true,
+            ->add('plainPassword', repeatedType::class, [
+                'mapped' => false,
                 'type' => PasswordType::class,
                 'first_options' => [
                     'label' => false,

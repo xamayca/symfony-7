@@ -32,20 +32,16 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?string $password = null;
 
-    /**
-     * @var string|null The plain password
-     *
-     * - This field is used to store the plain text password before it is hashed and saved to the database.
-     * - It should not be persisted to the database, is cleared after use via `eraseCredentials()` method.
-     * - It is typically used during the registration or password change process.
-     */
-    private ?string $plainPassword = null;
-
     #[ORM\Column(length: 255)]
     private ?string $username = null;
 
     #[ORM\Column]
     private ?\DateTimeImmutable $createdAt = null;
+
+    public function __construct()
+    {
+        $this->createdAt = new \DateTimeImmutable();
+    }
 
     public function getId(): ?int
     {

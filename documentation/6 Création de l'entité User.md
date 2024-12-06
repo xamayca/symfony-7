@@ -73,6 +73,19 @@ Répondez de nouveau aux questions comme suit :
  >
 ````
 
+Afin de définir automatiquement la date de création lors de la création d'un utilisateur, nous allons ajouter un constructeur à notre entité `User`.
+
+Ce constructeur initialisera la propriété `createdAt` avec l'heure actuelle.
+
+```php
+#src/Entity/User.php
+
+public function __construct()
+{
+    $this->createdAt = new \DateTimeImmutable();
+}
+```
+
 Nous devons maintenant mettre à jour le schéma de la base de données avec la commande suivante :
 
 ```bash
