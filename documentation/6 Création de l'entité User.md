@@ -1,5 +1,7 @@
 ## 6. Création de l'entité User
 
+---
+
 > 📌 **Pour créer l'entité `User`, consultez la documentation officielle de [Symfony (User)](https://symfony.com/doc/current/security.html#the-user).**
 
 Pour créer l'entité User, rendez-vous dans votre terminal et éxecuter la commande suivante :

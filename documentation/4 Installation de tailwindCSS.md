@@ -1,4 +1,7 @@
 ## 4. Installation de TailwindCSS (SymfonyCast Bundle)
+
+---
+
 > 📌 **Pour intégrer TailwindCSS dans Symfony, consultez la documentation officielle du [TailwindCSS Symfony Bundle](https://symfony.com/bundles/TailwindBundle/current/index.html).**
 
 Dans un terminal, exécutez les commandes suivantes pour installer TailwindCSS dans votre projet Symfony :
