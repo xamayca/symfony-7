@@ -1,4 +1,7 @@
 ## 7. Création des Fixtures Utilisateurs (Préparation de données)
+
+---
+
 > 📌 **Pour intégrer le bundle Doctrine Fixtures dans Symfony, consultez la documentation officielle du [Doctrine Fixtures Bundle](https://symfony.com/bundles/DoctrineFixturesBundle/current/).**
 
 Pour commencer, installez le bundle `DoctrineFixturesBundle` en exécutant la commande suivante dans le terminal :

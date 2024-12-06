@@ -1,4 +1,7 @@
 ## 3. Modification de la route du contrôleur
+
+---
+
 > 📌 **Pour plus d'informations sur les routes, consultez la documentation [Symfony Routing](https://symfony.com/doc/current/routing.html).**
 
 Une fois le contrôleur généré, ouvrez le fichier `src/Controller/HomeController.php` dans votre éditeur de texte ou IDE préféré.
