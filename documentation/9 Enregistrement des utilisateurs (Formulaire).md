@@ -1,6 +1,6 @@
 ## 9. Enregistrement des utilisateurs (Formulaire)
 
-Nous allons maintenant créer et configurer le formulaire d'enregistrement avec les champs nécessaires.
+Nous allons maintenant configurer le formulaire d'enregistrement avec les champs nécessaires.
 
 Ouvrez le fichier `src/Form/RegistrationFormType.php` qui correspond à votre formulaire.
 
