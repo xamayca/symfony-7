@@ -179,6 +179,23 @@ Ici, nous avons :
 - **Créer le formulaire** : Avec `$this->createForm(RegistrationFormType::class)`, nous générons le formulaire lié à l'entité `User`.
 - **Passer le formulaire à la vue** : Nous envoyons le formulaire au template Twig via `'registrationForm'` en utilisant `$registrationForm->createView()` pour le rendre dans la vue.
 
+Maintenant, ouvrez le fichier `templates/registration/index.html.twig` et modifiez-le comme suit :
+```php
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RegistrationController!{% endblock %}
+
+{% block body %}
+    
+    {{ form(registrationForm) }}
+
+{% endblock %}
+```
+
+Nous utilisons `{{ form(registrationForm) }}` pour rendre automatiquement le formulaire dans le template.
+
+Cette fonction génère le HTML nécessaire pour afficher le formulaire créé dans le contrôleur.
+
 Rendez-vous ensuite à l'URL `http://127.0.0.1:8000/registration` pour voir le formulaire en action.
 
 ---
