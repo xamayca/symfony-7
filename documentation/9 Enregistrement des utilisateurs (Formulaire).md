@@ -42,7 +42,6 @@ Dans ce formulaire, nous avons lié les champs aux propriétés de l'entité Use
 
 > 🗒️ **Remarque** :
 > - `createdAt` et `roles` sont des propriétés qui seront automatiquement renseignées lors de l'enregistrement de l'utilisateur, sans nécessiter d'entrée dans le formulaire.
-> #### ⚠️ Nous gérerons ces données dans le contrôleur `RegistrationController` afin de simplifier le formulaire et de nous concentrer sur les informations essentielles.
 
 ---
 
