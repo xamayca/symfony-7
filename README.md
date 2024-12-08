@@ -19,7 +19,5 @@
 [7 Création des Fixtures Utilisateurs (DoctrineFixturesBundle & FakerPHP)](documentation/7%20Cr%C3%A9ation%20des%20Fixtures%20Utilisateurs.md)
 
 [8 Enregistrement des utilisateurs(Préparation)](documentation/8%20Enregistrement%20des%20utilisateurs%20%28Pr%C3%A9paration%29.md)
-
-[9 Enregistrement des utilisateurs (Formulaire)](documentation/9%20Enregistrement%20des%20utilisateurs%20%28Formulaire%29.md)
-
-[10 Enregistrement des utilisateurs (RegistrationController)](documentation/10%20Enregistrement%20des%20utilisateurs%20%28RegistrationController%29.md)
+- [8.1 Enregistrement des utilisateurs (Formulaire)](documentation/9%20Enregistrement%20des%20utilisateurs%20%28Formulaire%29.md)
+- [8.2 Enregistrement des utilisateurs (RegistrationController)](documentation/10%20Enregistrement%20des%20utilisateurs%20%28RegistrationController%29.md)
