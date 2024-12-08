@@ -1,0 +1,76 @@
+## 10. Enregistrement des utilisateurs (RegistrationController)
+
+> 📌 **Pour en savoir plus sur la soumission d'un formulaire, vous pouvez consulter la documentation officielle de [Symfony (Processing forms)](https://symfony.com/doc/current/forms.html#processing-forms).**
+
+Maintenant que notre vue affiche notre formulaire et qu'il contient les champs nécessaires à l'inscription des utilisateurs, nous devons gérer sa soumission dans notre contrôleur.
+
+Ouvrez le fichier `src/Controller/RegistrationController.php` et modifier le comme ceci :
+
+```php
+<?php
+
+namespace App\Controller;
+
+use App\Entity\User;
+use App\Form\RegistrationFormType;
+use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
+use Symfony\Component\Routing\Attribute\Route;
+
+class RegistrationController extends AbstractController
+{
+    #[Route('/registration', name: 'app_registration')]
+    public function register(
+        Request $request,
+        UserPasswordHasherInterface $userPasswordHasher,
+        EntityManagerInterface $entityManager,
+    ): Response
+    {
+
+        $user = new User();
+
+        $registrationForm = $this->createForm(RegistrationFormType::class, $user, [
+            'action' => $this->generateUrl('app_registration'),
+            'method' => 'POST',
+        ]);
+
+        $registrationForm->handleRequest($request);
+
+        if ($registrationForm->isSubmitted() && $registrationForm->isValid()) {
+
+            $plainPassword = $registrationForm->get('plainPassword')->getData();
+
+            $user->setPassword($userPasswordHasher->hashPassword($user, $plainPassword));
+
+            // Send confirmation email here
+
+            $entityManager->persist($user);
+            $entityManager->flush();
+
+            return $this->redirectToRoute('app_home');
+        }
+
+        return $this->render('registration/index.html.twig', [
+            'registrationForm' => $registrationForm,
+            'controller_name' => 'RegistrationController',
+        ]);
+    }
+}
+```
+
+Le `RegistrationController` est responsable de la gestion de l'inscription des utilisateurs.
+
+> 🗒️ **Remarques** :
+> - Il crée un objet User pour représenter le nouvel utilisateur.
+> - Il génère un formulaire d'inscription à l'aide du type de formulaire `RegistrationFormType`.
+> - Ce formulaire envoie une requête `POST` sur la route `app_registration`.
+> - Il vérifie si le formulaire a été soumis et est valide.
+> - Il hache le mot de passe de l'utilisateur avant de l'enregistrer dans la base de données.
+> - Il redirige l'utilisateur vers la page d'accueil après une inscription réussie.
+
+Maintenant que l'inscription est fonctionnelle, nous allons créer un service d'envoi d'email pour permettre à l'utilisateur de valider son compte en recevant un email de confirmation.
+
+---
